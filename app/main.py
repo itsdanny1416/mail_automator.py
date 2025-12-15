@@ -5,8 +5,8 @@ from fastapi.templating import Jinja2Templates
 from fastapi import Request, BackgroundTasks
 from dotenv import load_dotenv
 
-from app.data_sources import load_from_excel, load_from_sql
-from email_templates import render_email
+from .data_sources import load_from_excel, load_from_sql
+from app.email_templates import render_email
 from app.senders.gmail_sender import send_gmail_html
 from app.senders.outlook_sender import send_outlook_html
 
